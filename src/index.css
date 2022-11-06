@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("images/NightSky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%);
+  width: 700px;
+}
+
+.searchBar > select {
+  position: fixed;
+  -webkit-transform: translate(10%, -90%);
+  transform: translate(10%, -90%);
+  top: 10%;
+  left: 46%;
+  border-radius: 8px;
+  z-index: 99999;
+}
